@@ -14,6 +14,7 @@
         <module>changgou-service-api</module>
         <module>changgou-web</module>
         <module>changgou-eureka</module>
+        <module>changgou-core</module>
     </modules>
     <packaging>pom</packaging>
     <description>所有的畅购的工程的父工程，用于版本的统一控制</description>

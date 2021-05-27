@@ -29,6 +29,7 @@ public class FastdfsTest {
 
             System.out.println(jpg);
         }
+        System.out.println( "01----->"+jpgs[0] +"02----->"+ jpgs[1]);
 
     }
     @Test

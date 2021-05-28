@@ -8,14 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/***
- * 描述
- * @author ljh
- * @packagename com.changgou.core
- * @version 1.0
- * @date 2020/8/10
- */
-
 public abstract class AbstractCoreController<T> implements ICoreController<T> {
 
     //调用方的service

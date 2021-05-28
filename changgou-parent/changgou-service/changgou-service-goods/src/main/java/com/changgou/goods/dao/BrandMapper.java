@@ -1,25 +1,17 @@
 package com.changgou.goods.dao;
-
 import com.changgou.goods.pojo.Brand;
 import org.apache.ibatis.annotations.Select;
 import tk.mybatis.mapper.common.Mapper;
 
 import java.util.List;
 
-/**
- *
- * extends Mapper<Brand>        mapper 使用通用的mapper的接口  泛型指定要操作的POJO对象
- *
- * @author ljh
- * @version 1.0
- * @date 2020/9/20 11:24
- * @description 标题
- * @package com.changgou.goods.dao
- */
-
-
-
+/****
+ * @Author:admin
+ * @Description:Brand的Dao
+ * @Date 2019/6/14 0:12
+ *****/
 public interface BrandMapper extends Mapper<Brand> {
-
-
+    //查询
+    @Select(value="select tb.* from tb_category_brand tcb,tb_brand tb where tcb.category_id=#{id} and tcb.brand_id=tb.id")
+    List<Brand> findBrandByCategory(Integer id);
 }
